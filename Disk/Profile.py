@@ -1,0 +1,1 @@
+# this is the code for analysis the distributions of the information

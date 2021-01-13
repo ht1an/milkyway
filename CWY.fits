@@ -1,0 +1,181 @@
+SIMPLE  =                    T / Standard FITS format                           BITPIX  =                    8 / Character data                                 NAXIS   =                    1 / Text string                                    NAXIS1  =                 7327 / Number of characters                           VOTMETA =                    T / Table metadata in VOTable format               EXTEND  =                    T / There are standard extensions                  COMMENT                                                                         COMMENT The data in this primary HDU consists of bytes which                    COMMENT comprise a VOTABLE document.                                            COMMENT The VOTable describes the metadata of the table contained               COMMENT in the following BINTABLE extension.                                    COMMENT Such a BINTABLE extension can be used on its own as a perfectly         COMMENT good table, but the information from this HDU may provide some          COMMENT useful additional metadata.                                             COMMENT There is one following BINTABLE.                                        NTABLE  =                    1 / Number of following BINTABLE HDUs              END                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             <?xml version='1.0'?>
+<VOTABLE version="1.4"
+ xmlns="http://www.ivoa.net/xml/VOTable/v1.3">
+<!--
+ !  VOTable written by STIL version 3.4-2 (uk.ac.starlink.votable.VOTableWriter)
+ !  at 2021-01-13T03:31:16
+ !-->
+<RESOURCE>
+<!-- Describes BINTABLE extensions in the following HDU.-->
+<TABLE name="/Users/htian/Downloads/CWY_htian_astro.csv" nrows="1">
+<FIELD datatype="long" name="solution_id">
+<VALUES null='-9223372036854775808'/>
+</FIELD>
+<FIELD arraysize="29" datatype="char" name="designation"/>
+<FIELD datatype="long" name="source_id">
+<VALUES null='-9223372036854775808'/>
+</FIELD>
+<FIELD datatype="int" name="random_index">
+<VALUES null='-2147483648'/>
+</FIELD>
+<FIELD datatype="short" name="ref_epoch">
+<VALUES null='-32768'/>
+</FIELD>
+<FIELD datatype="double" name="ra"/>
+<FIELD datatype="double" name="ra_error"/>
+<FIELD datatype="double" name="dec"/>
+<FIELD datatype="double" name="dec_error"/>
+<FIELD datatype="double" name="parallax"/>
+<FIELD datatype="double" name="parallax_error"/>
+<FIELD datatype="double" name="parallax_over_error"/>
+<FIELD datatype="double" name="pm"/>
+<FIELD datatype="double" name="pmra"/>
+<FIELD datatype="double" name="pmra_error"/>
+<FIELD datatype="double" name="pmdec"/>
+<FIELD datatype="double" name="pmdec_error"/>
+<FIELD datatype="double" name="ra_dec_corr"/>
+<FIELD datatype="double" name="ra_parallax_corr"/>
+<FIELD datatype="double" name="ra_pmra_corr"/>
+<FIELD datatype="double" name="ra_pmdec_corr"/>
+<FIELD datatype="double" name="dec_parallax_corr"/>
+<FIELD datatype="double" name="dec_pmra_corr"/>
+<FIELD datatype="double" name="dec_pmdec_corr"/>
+<FIELD datatype="double" name="parallax_pmra_corr"/>
+<FIELD datatype="double" name="parallax_pmdec_corr"/>
+<FIELD datatype="double" name="pmra_pmdec_corr"/>
+<FIELD datatype="short" name="astrometric_n_obs_al">
+<VALUES null='-32768'/>
+</FIELD>
+<FIELD datatype="short" name="astrometric_n_obs_ac">
+<VALUES null='-32768'/>
+</FIELD>
+<FIELD datatype="short" name="astrometric_n_good_obs_al">
+<VALUES null='-32768'/>
+</FIELD>
+<FIELD datatype="short" name="astrometric_n_bad_obs_al">
+<VALUES null='-32768'/>
+</FIELD>
+<FIELD datatype="double" name="astrometric_gof_al"/>
+<FIELD datatype="double" name="astrometric_chi2_al"/>
+<FIELD datatype="double" name="astrometric_excess_noise"/>
+<FIELD datatype="double" name="astrometric_excess_noise_sig"/>
+<FIELD datatype="short" name="astrometric_params_solved">
+<VALUES null='-32768'/>
+</FIELD>
+<FIELD datatype="boolean" name="astrometric_primary_flag_char"/>
+<FIELD arraysize="8" datatype="char" name="nu_eff_used_in_astrometry"/>
+<FIELD arraysize="9" datatype="char" name="pseudocolour"/>
+<FIELD arraysize="11" datatype="char" name="pseudocolour_error"/>
+<FIELD arraysize="12" datatype="char" name="ra_pseudocolour_corr"/>
+<FIELD arraysize="13" datatype="char" name="dec_pseudocolour_corr"/>
+<FIELD arraysize="12" datatype="char" name="parallax_pseudocolour_corr"/>
+<FIELD arraysize="12" datatype="char" name="pmra_pseudocolour_corr"/>
+<FIELD arraysize="12" datatype="char" name="pmdec_pseudocolour_corr"/>
+<FIELD datatype="short" name="astrometric_matched_transits">
+<VALUES null='-32768'/>
+</FIELD>
+<FIELD datatype="short" name="visibility_periods_used">
+<VALUES null='-32768'/>
+</FIELD>
+<FIELD datatype="double" name="astrometric_sigma5d_max"/>
+<FIELD datatype="short" name="matched_transits">
+<VALUES null='-32768'/>
+</FIELD>
+<FIELD datatype="short" name="new_matched_transits">
+<VALUES null='-32768'/>
+</FIELD>
+<FIELD datatype="short" name="matched_transits_removed">
+<VALUES null='-32768'/>
+</FIELD>
+<FIELD datatype="double" name="ipd_gof_harmonic_amplitude"/>
+<FIELD datatype="double" name="ipd_gof_harmonic_phase"/>
+<FIELD datatype="short" name="ipd_frac_multi_peak">
+<VALUES null='-32768'/>
+</FIELD>
+<FIELD datatype="short" name="ipd_frac_odd_win">
+<VALUES null='-32768'/>
+</FIELD>
+<FIELD datatype="double" name="ruwe"/>
+<FIELD arraysize="10" datatype="char" name="scan_direction_strength_k1"/>
+<FIELD arraysize="9" datatype="char" name="scan_direction_strength_k2"/>
+<FIELD arraysize="10" datatype="char" name="scan_direction_strength_k3"/>
+<FIELD arraysize="9" datatype="char" name="scan_direction_strength_k4"/>
+<FIELD arraysize="10" datatype="char" name="scan_direction_mean_k1"/>
+<FIELD arraysize="9" datatype="char" name="scan_direction_mean_k2"/>
+<FIELD arraysize="9" datatype="char" name="scan_direction_mean_k3"/>
+<FIELD arraysize="8" datatype="char" name="scan_direction_mean_k4"/>
+<FIELD datatype="boolean" name="duplicated_source_char"/>
+<FIELD datatype="short" name="phot_g_n_obs">
+<VALUES null='-32768'/>
+</FIELD>
+<FIELD datatype="double" name="phot_g_mean_flux"/>
+<FIELD datatype="double" name="phot_g_mean_flux_error"/>
+<FIELD datatype="double" name="phot_g_mean_flux_over_error"/>
+<FIELD datatype="double" name="phot_g_mean_mag"/>
+<FIELD datatype="short" name="phot_bp_n_obs">
+<VALUES null='-32768'/>
+</FIELD>
+<FIELD datatype="double" name="phot_bp_mean_flux"/>
+<FIELD datatype="double" name="phot_bp_mean_flux_error"/>
+<FIELD datatype="double" name="phot_bp_mean_flux_over_error"/>
+<FIELD datatype="double" name="phot_bp_mean_mag"/>
+<FIELD datatype="short" name="phot_rp_n_obs">
+<VALUES null='-32768'/>
+</FIELD>
+<FIELD datatype="double" name="phot_rp_mean_flux"/>
+<FIELD datatype="double" name="phot_rp_mean_flux_error"/>
+<FIELD datatype="double" name="phot_rp_mean_flux_over_error"/>
+<FIELD datatype="double" name="phot_rp_mean_mag"/>
+<FIELD datatype="short" name="phot_bp_n_contaminated_transits">
+<VALUES null='-32768'/>
+</FIELD>
+<FIELD datatype="short" name="phot_bp_n_blended_transits">
+<VALUES null='-32768'/>
+</FIELD>
+<FIELD datatype="short" name="phot_rp_n_contaminated_transits">
+<VALUES null='-32768'/>
+</FIELD>
+<FIELD datatype="short" name="phot_rp_n_blended_transits">
+<VALUES null='-32768'/>
+</FIELD>
+<FIELD datatype="short" name="phot_proc_mode">
+<VALUES null='-32768'/>
+</FIELD>
+<FIELD datatype="double" name="phot_bp_rp_excess_factor"/>
+<FIELD datatype="double" name="bp_rp"/>
+<FIELD datatype="double" name="bp_g"/>
+<FIELD datatype="double" name="g_rp"/>
+<FIELD arraysize="9" datatype="char" name="dr2_radial_velocity"/>
+<FIELD arraysize="9" datatype="char" name="dr2_radial_velocity_error"/>
+<FIELD datatype="short" name="dr2_rv_nb_transits">
+<VALUES null='-32768'/>
+</FIELD>
+<FIELD arraysize="4" datatype="char" name="dr2_rv_template_teff"/>
+<FIELD arraysize="4" datatype="char" name="dr2_rv_template_logg"/>
+<FIELD arraysize="4" datatype="char" name="dr2_rv_template_fe_h"/>
+<FIELD datatype="double" name="l"/>
+<FIELD datatype="double" name="b"/>
+<FIELD datatype="double" name="ecl_lon"/>
+<FIELD datatype="double" name="ecl_lat"/>
+<FIELD datatype="long" name="HtmID">
+<VALUES null='-9223372036854775808'/>
+</FIELD>
+<FIELD datatype="boolean" name="astrometric_primary_flag"/>
+<FIELD datatype="boolean" name="duplicated_source"/>
+<FIELD datatype="double" name="cx"/>
+<FIELD datatype="double" name="cy"/>
+<FIELD datatype="double" name="cz"/>
+<FIELD datatype="short" name="flag">
+<VALUES null='-32768'/>
+</FIELD>
+<FIELD datatype="double" name="rMedGeo"/>
+<FIELD datatype="double" name="rLoGeo"/>
+<FIELD datatype="double" name="rHiGeo"/>
+<FIELD datatype="double" name="rMedPhotogeo"/>
+<FIELD datatype="double" name="rLoPhotogeo"/>
+<FIELD datatype="double" name="rHiPhotogeo"/>
+<!-- Dummy VOTable - no DATA element -->
+</TABLE>
+</RESOURCE>
+</VOTABLE>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 XTENSION= 'BINTABLE'           / binary table extension                         BITPIX  =                    8 / 8-bit bytes                                    NAXIS   =                    2 / 2-dimensional table                            NAXIS1  =                  772 / width of table in bytes                        NAXIS2  =                    1 / number of rows in table                        PCOUNT  =                    0 / size of special data area                      GCOUNT  =                    1 / one data group                                 TFIELDS =                  112 / number of columns                              EXTNAME = '/Users/htian/Downloads/CWY_htian_astro.csv' / table name             TTYPE1  = 'solution_id'        / label for column 1                             TFORM1  = 'K       '           / format for column 1                            TTYPE2  = 'designation'        / label for column 2                             TFORM2  = '29A     '           / format for column 2                            TTYPE3  = 'source_id'          / label for column 3                             TFORM3  = 'K       '           / format for column 3                            TTYPE4  = 'random_index'       / label for column 4                             TFORM4  = 'J       '           / format for column 4                            TTYPE5  = 'ref_epoch'          / label for column 5                             TFORM5  = 'I       '           / format for column 5                            TTYPE6  = 'ra      '           / label for column 6                             TFORM6  = 'D       '           / format for column 6                            TTYPE7  = 'ra_error'           / label for column 7                             TFORM7  = 'D       '           / format for column 7                            TTYPE8  = 'dec     '           / label for column 8                             TFORM8  = 'D       '           / format for column 8                            TTYPE9  = 'dec_error'          / label for column 9                             TFORM9  = 'D       '           / format for column 9                            TTYPE10 = 'parallax'           / label for column 10                            TFORM10 = 'D       '           / format for column 10                           TTYPE11 = 'parallax_error'     / label for column 11                            TFORM11 = 'D       '           / format for column 11                           TTYPE12 = 'parallax_over_error' / label for column 12                           TFORM12 = 'D       '           / format for column 12                           TTYPE13 = 'pm      '           / label for column 13                            TFORM13 = 'D       '           / format for column 13                           TTYPE14 = 'pmra    '           / label for column 14                            TFORM14 = 'D       '           / format for column 14                           TTYPE15 = 'pmra_error'         / label for column 15                            TFORM15 = 'D       '           / format for column 15                           TTYPE16 = 'pmdec   '           / label for column 16                            TFORM16 = 'D       '           / format for column 16                           TTYPE17 = 'pmdec_error'        / label for column 17                            TFORM17 = 'D       '           / format for column 17                           TTYPE18 = 'ra_dec_corr'        / label for column 18                            TFORM18 = 'D       '           / format for column 18                           TTYPE19 = 'ra_parallax_corr'   / label for column 19                            TFORM19 = 'D       '           / format for column 19                           TTYPE20 = 'ra_pmra_corr'       / label for column 20                            TFORM20 = 'D       '           / format for column 20                           TTYPE21 = 'ra_pmdec_corr'      / label for column 21                            TFORM21 = 'D       '           / format for column 21                           TTYPE22 = 'dec_parallax_corr'  / label for column 22                            TFORM22 = 'D       '           / format for column 22                           TTYPE23 = 'dec_pmra_corr'      / label for column 23                            TFORM23 = 'D       '           / format for column 23                           TTYPE24 = 'dec_pmdec_corr'     / label for column 24                            TFORM24 = 'D       '           / format for column 24                           TTYPE25 = 'parallax_pmra_corr' / label for column 25                            TFORM25 = 'D       '           / format for column 25                           TTYPE26 = 'parallax_pmdec_corr' / label for column 26                           TFORM26 = 'D       '           / format for column 26                           TTYPE27 = 'pmra_pmdec_corr'    / label for column 27                            TFORM27 = 'D       '           / format for column 27                           TTYPE28 = 'astrometric_n_obs_al' / label for column 28                          TFORM28 = 'I       '           / format for column 28                           TTYPE29 = 'astrometric_n_obs_ac' / label for column 29                          TFORM29 = 'I       '           / format for column 29                           TTYPE30 = 'astrometric_n_good_obs_al' / label for column 30                     TFORM30 = 'I       '           / format for column 30                           TTYPE31 = 'astrometric_n_bad_obs_al' / label for column 31                      TFORM31 = 'I       '           / format for column 31                           TTYPE32 = 'astrometric_gof_al' / label for column 32                            TFORM32 = 'D       '           / format for column 32                           TTYPE33 = 'astrometric_chi2_al' / label for column 33                           TFORM33 = 'D       '           / format for column 33                           TTYPE34 = 'astrometric_excess_noise' / label for column 34                      TFORM34 = 'D       '           / format for column 34                           TTYPE35 = 'astrometric_excess_noise_sig' / label for column 35                  TFORM35 = 'D       '           / format for column 35                           TTYPE36 = 'astrometric_params_solved' / label for column 36                     TFORM36 = 'I       '           / format for column 36                           TTYPE37 = 'astrometric_primary_flag_char' / label for column 37                 TFORM37 = 'L       '           / format for column 37                           TTYPE38 = 'nu_eff_used_in_astrometry' / label for column 38                     TFORM38 = '8A      '           / format for column 38                           TTYPE39 = 'pseudocolour'       / label for column 39                            TFORM39 = '9A      '           / format for column 39                           TTYPE40 = 'pseudocolour_error' / label for column 40                            TFORM40 = '11A     '           / format for column 40                           TTYPE41 = 'ra_pseudocolour_corr' / label for column 41                          TFORM41 = '12A     '           / format for column 41                           TTYPE42 = 'dec_pseudocolour_corr' / label for column 42                         TFORM42 = '13A     '           / format for column 42                           TTYPE43 = 'parallax_pseudocolour_corr' / label for column 43                    TFORM43 = '12A     '           / format for column 43                           TTYPE44 = 'pmra_pseudocolour_corr' / label for column 44                        TFORM44 = '12A     '           / format for column 44                           TTYPE45 = 'pmdec_pseudocolour_corr' / label for column 45                       TFORM45 = '12A     '           / format for column 45                           TTYPE46 = 'astrometric_matched_transits' / label for column 46                  TFORM46 = 'I       '           / format for column 46                           TTYPE47 = 'visibility_periods_used' / label for column 47                       TFORM47 = 'I       '           / format for column 47                           TTYPE48 = 'astrometric_sigma5d_max' / label for column 48                       TFORM48 = 'D       '           / format for column 48                           TTYPE49 = 'matched_transits'   / label for column 49                            TFORM49 = 'I       '           / format for column 49                           TTYPE50 = 'new_matched_transits' / label for column 50                          TFORM50 = 'I       '           / format for column 50                           TTYPE51 = 'matched_transits_removed' / label for column 51                      TFORM51 = 'I       '           / format for column 51                           TTYPE52 = 'ipd_gof_harmonic_amplitude' / label for column 52                    TFORM52 = 'D       '           / format for column 52                           TTYPE53 = 'ipd_gof_harmonic_phase' / label for column 53                        TFORM53 = 'D       '           / format for column 53                           TTYPE54 = 'ipd_frac_multi_peak' / label for column 54                           TFORM54 = 'I       '           / format for column 54                           TTYPE55 = 'ipd_frac_odd_win'   / label for column 55                            TFORM55 = 'I       '           / format for column 55                           TTYPE56 = 'ruwe    '           / label for column 56                            TFORM56 = 'D       '           / format for column 56                           TTYPE57 = 'scan_direction_strength_k1' / label for column 57                    TFORM57 = '10A     '           / format for column 57                           TTYPE58 = 'scan_direction_strength_k2' / label for column 58                    TFORM58 = '9A      '           / format for column 58                           TTYPE59 = 'scan_direction_strength_k3' / label for column 59                    TFORM59 = '10A     '           / format for column 59                           TTYPE60 = 'scan_direction_strength_k4' / label for column 60                    TFORM60 = '9A      '           / format for column 60                           TTYPE61 = 'scan_direction_mean_k1' / label for column 61                        TFORM61 = '10A     '           / format for column 61                           TTYPE62 = 'scan_direction_mean_k2' / label for column 62                        TFORM62 = '9A      '           / format for column 62                           TTYPE63 = 'scan_direction_mean_k3' / label for column 63                        TFORM63 = '9A      '           / format for column 63                           TTYPE64 = 'scan_direction_mean_k4' / label for column 64                        TFORM64 = '8A      '           / format for column 64                           TTYPE65 = 'duplicated_source_char' / label for column 65                        TFORM65 = 'L       '           / format for column 65                           TTYPE66 = 'phot_g_n_obs'       / label for column 66                            TFORM66 = 'I       '           / format for column 66                           TTYPE67 = 'phot_g_mean_flux'   / label for column 67                            TFORM67 = 'D       '           / format for column 67                           TTYPE68 = 'phot_g_mean_flux_error' / label for column 68                        TFORM68 = 'D       '           / format for column 68                           TTYPE69 = 'phot_g_mean_flux_over_error' / label for column 69                   TFORM69 = 'D       '           / format for column 69                           TTYPE70 = 'phot_g_mean_mag'    / label for column 70                            TFORM70 = 'D       '           / format for column 70                           TTYPE71 = 'phot_bp_n_obs'      / label for column 71                            TFORM71 = 'I       '           / format for column 71                           TTYPE72 = 'phot_bp_mean_flux'  / label for column 72                            TFORM72 = 'D       '           / format for column 72                           TTYPE73 = 'phot_bp_mean_flux_error' / label for column 73                       TFORM73 = 'D       '           / format for column 73                           TTYPE74 = 'phot_bp_mean_flux_over_error' / label for column 74                  TFORM74 = 'D       '           / format for column 74                           TTYPE75 = 'phot_bp_mean_mag'   / label for column 75                            TFORM75 = 'D       '           / format for column 75                           TTYPE76 = 'phot_rp_n_obs'      / label for column 76                            TFORM76 = 'I       '           / format for column 76                           TTYPE77 = 'phot_rp_mean_flux'  / label for column 77                            TFORM77 = 'D       '           / format for column 77                           TTYPE78 = 'phot_rp_mean_flux_error' / label for column 78                       TFORM78 = 'D       '           / format for column 78                           TTYPE79 = 'phot_rp_mean_flux_over_error' / label for column 79                  TFORM79 = 'D       '           / format for column 79                           TTYPE80 = 'phot_rp_mean_mag'   / label for column 80                            TFORM80 = 'D       '           / format for column 80                           TTYPE81 = 'phot_bp_n_contaminated_transits' / label for column 81               TFORM81 = 'I       '           / format for column 81                           TTYPE82 = 'phot_bp_n_blended_transits' / label for column 82                    TFORM82 = 'I       '           / format for column 82                           TTYPE83 = 'phot_rp_n_contaminated_transits' / label for column 83               TFORM83 = 'I       '           / format for column 83                           TTYPE84 = 'phot_rp_n_blended_transits' / label for column 84                    TFORM84 = 'I       '           / format for column 84                           TTYPE85 = 'phot_proc_mode'     / label for column 85                            TFORM85 = 'I       '           / format for column 85                           TTYPE86 = 'phot_bp_rp_excess_factor' / label for column 86                      TFORM86 = 'D       '           / format for column 86                           TTYPE87 = 'bp_rp   '           / label for column 87                            TFORM87 = 'D       '           / format for column 87                           TTYPE88 = 'bp_g    '           / label for column 88                            TFORM88 = 'D       '           / format for column 88                           TTYPE89 = 'g_rp    '           / label for column 89                            TFORM89 = 'D       '           / format for column 89                           TTYPE90 = 'dr2_radial_velocity' / label for column 90                           TFORM90 = '9A      '           / format for column 90                           TTYPE91 = 'dr2_radial_velocity_error' / label for column 91                     TFORM91 = '9A      '           / format for column 91                           TTYPE92 = 'dr2_rv_nb_transits' / label for column 92                            TFORM92 = 'I       '           / format for column 92                           TTYPE93 = 'dr2_rv_template_teff' / label for column 93                          TFORM93 = '4A      '           / format for column 93                           TTYPE94 = 'dr2_rv_template_logg' / label for column 94                          TFORM94 = '4A      '           / format for column 94                           TTYPE95 = 'dr2_rv_template_fe_h' / label for column 95                          TFORM95 = '4A      '           / format for column 95                           TTYPE96 = 'l       '           / label for column 96                            TFORM96 = 'D       '           / format for column 96                           TTYPE97 = 'b       '           / label for column 97                            TFORM97 = 'D       '           / format for column 97                           TTYPE98 = 'ecl_lon '           / label for column 98                            TFORM98 = 'D       '           / format for column 98                           TTYPE99 = 'ecl_lat '           / label for column 99                            TFORM99 = 'D       '           / format for column 99                           TTYPE100= 'HtmID   '           / label for column 100                           TFORM100= 'K       '           / format for column 100                          TTYPE101= 'astrometric_primary_flag' / label for column 101                     TFORM101= 'L       '           / format for column 101                          TTYPE102= 'duplicated_source'  / label for column 102                           TFORM102= 'L       '           / format for column 102                          TTYPE103= 'cx      '           / label for column 103                           TFORM103= 'D       '           / format for column 103                          TTYPE104= 'cy      '           / label for column 104                           TFORM104= 'D       '           / format for column 104                          TTYPE105= 'cz      '           / label for column 105                           TFORM105= 'D       '           / format for column 105                          TTYPE106= 'flag    '           / label for column 106                           TFORM106= 'I       '           / format for column 106                          TTYPE107= 'rMedGeo '           / label for column 107                           TFORM107= 'D       '           / format for column 107                          TTYPE108= 'rLoGeo  '           / label for column 108                           TFORM108= 'D       '           / format for column 108                          TTYPE109= 'rHiGeo  '           / label for column 109                           TFORM109= 'D       '           / format for column 109                          TTYPE110= 'rMedPhotogeo'       / label for column 110                           TFORM110= 'D       '           / format for column 110                          TTYPE111= 'rLoPhotogeo'        / label for column 111                           TFORM111= 'D       '           / format for column 111                          TTYPE112= 'rHiPhotogeo'        / label for column 112                           TFORM112= 'D       '           / format for column 112                          DATE-HDU= '2021-01-13T03:31:16' / Date of HDU creation (UTC)                    STILVERS= '3.4-2   '           / Version of STIL software                       STILCLAS= 'uk.ac.starlink.votable.FitsPlusTableWriter' / STIL Author class      END                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ¥d    Gaia EDR3 2537746371043234048#7‚· ë 8-ç‡@,b¶§%èR?ßQr8Å¶¥?ˇI=A÷!@?°_1hÿ±á?¨˛;Ë·,?´çL.V’z?÷.	˛ÜÉ@PT¨)ø@VqlƒE˝?∞Ç—¯ﬂ¿Ë“}ôŸ?≠—◊"ºû?‘¯VæR∂Ü?Ω√ÄÛ∞feø±ñÙ"“?Ø˜auÊ∑øæc—`∞D ?ô£ój#_øª≈ñw¶)À?∂Xèé'ˆi?«:b“]/Ü?⁄úÆåoÂk ˛ @ÉÅî¿@¥8bM”?ÿ8%·;€@c∆÷°a‰˜ _Fnull    1.786478 0.01096171 -0.1355295  -0.07303242  0.01214126  -0.02412251 0.09906673    ?∫èÛ˛j # #  ?ë∫"{*◊@8^J82v   ?ÚÀWÅ«˝null      null     null      null     null      null     null     null    F.A2p˚@ä◊s¸P@ñ-ı¬è\)@% ¿Éo !A,@àá °@Éìtºj@ñ´üæv…@$ÿ@·qüÄ !A<\f•»ñ@qeÆÊ1¯°@ôfffff@%?|Ìëhs          ?Úá˝≈ì®ø…Œ¯ 7≠Ïø¥ƒﬂÓgß.øæŸ—.[]null     null       nullnullnull@_j¯D¢ä]¿Nq©ˇ≠^⁄@+•/˛Ñ¿Y∑˝;·  ÜVÌTFF?ÔT=±?œ]~âÀ’?°xUµ8§v'%@πA_Üecj@¥b¨ÿäBµ@¿VÄ¡≥k@∫„ZÜ /g@µÁó%ÓÃﬁ@¿‚óºåDƒ                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            

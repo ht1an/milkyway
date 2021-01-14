@@ -5,7 +5,12 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
+<<<<<<< HEAD
   <component name="PyDocumentationSettings">
     <option name="renderExternalDocumentation" value="true" />
+=======
+  <component name="TestRunnerService">
+    <option name="PROJECT_TEST_RUNNER" value="pytest" />
+>>>>>>> 550a66e68947fffe68699822987a127896ce9bb1
   </component>
 </module>

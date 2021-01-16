@@ -40,7 +40,6 @@ def mock_disk_z(h, N):
         return np.tanh(0.5*z/h)
 
     def de_rnd_to_Z(h,rnd):
-
         int_sig_min = integrate_sig_disk(h,10)
         rnd_pp = int_sig_min+rnd
         return 2*h*np.arctanh(rnd_pp)
@@ -51,3 +50,4 @@ def mock_disk_z(h, N):
     rnd_sig = np.random.uniform(0,1,N)*tot_unnorm
     Z = de_rnd_to_Z(h,rnd_sig)
     return Z
+

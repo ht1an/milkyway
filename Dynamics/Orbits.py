@@ -28,5 +28,5 @@ def Calc_Orbit(ra, dec, dist, pmra, pmdec, rv,t=None, PV_Sun=None, Potential=Non
     else:
         ts = t*units.Gyr
     o.integrate(ts, pot=pot)
-    return o
+    return o, ts
 

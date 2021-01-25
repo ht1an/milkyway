@@ -13,11 +13,11 @@ def Correct_PM_From_Solar_Motion(ra, dec, pmra, pmdec, dist, degree=True, kpc=Tr
     # convert the proper motion along ra dec to those along l b
     if radec:
         llbb = gub.radec_to_lb(ra, dec, degree=True)
-        ll = llbb[:,0]
-        bb = llbb[:,1]
+        ll = llbb[:, 0]
+        bb = llbb[:, 1]
         pmllbb = gub.pmrapmdec_to_pmllpmbb(pmra, pmdec, ra, dec, degree=True)
-        pmll = pmllbb[:,0]
-        pmbb = pmllbb[:,1]
+        pmll = pmllbb[:, 0]
+        pmbb = pmllbb[:, 1]
     else:
         ll = ra * 1.
         bb = dec * 1.
@@ -29,23 +29,24 @@ def Correct_PM_From_Solar_Motion(ra, dec, pmra, pmdec, dist, degree=True, kpc=Tr
     pmlMC = pmll[:, 0] - rvpm[:, 1]
     pmbMC = pmbb[:, 1] - rvpm[:, 2]
     pmradecMC = gub.pmllpmbb_to_pmrapmdec(pmlMC, pmbMC, ll, bb, degree=True)
-    return pmlMC, pmbMC, pmradecMC[:,0], pmradecMC[:,1]
+    return pmlMC, pmbMC, pmradecMC[:, 0], pmradecMC[:, 1]
 
-def To_Sag_Coord(ra, dec, degree=True):
+
+def to_sag_coord(ra, dec, degree=True):
     import math as m
     import numpy as np
     # -------------------------------
     n = len(ra)
     if degree:
-        ra_tmp = ra * m.pi/180
-        dec_tmp = dec * m.pi/180
+        ra_tmp = ra * m.pi / 180
+        dec_tmp = dec * m.pi / 180
     else:
         ra_tmp = ra * 1.0
         dec_tmp = dec * 1.0
     # conversion matrix
-    a11, a12, a13 = -0.93595354,  -0.31910658,  0.14886895
-    a21, a22, a23 =  0.21215555,  -0.84846291, -0.48487186
-    b11, b12, b13 =  0.28103559,  -0.42223415,  0.86182209
+    a11, a12, a13 = -0.93595354, -0.31910658, 0.14886895
+    a21, a22, a23 = 0.21215555, -0.84846291, -0.48487186
+    b11, b12, b13 = 0.28103559, -0.42223415, 0.86182209
 
     sag_lam = np.arctan2(a11 * np.cos(ra_tmp) * np.cos(dec_tmp) +
                          a12 * np.sin(ra_tmp) * np.cos(dec_tmp) +
@@ -57,7 +58,7 @@ def To_Sag_Coord(ra, dec, degree=True):
                         b12 * np.sin(ra_tmp) * np.cos(dec_tmp) +
                         b13 * np.sin(dec_tmp))
 
-    sag_coo = np.zeros((n,2))
+    sag_coo = np.zeros((n, 2))
     if degree:
         sag_coo[:, 0] = sag_lam * 180 / m.pi
         sag_coo[:, 1] = sag_bet * 180 / m.pi
@@ -67,13 +68,13 @@ def To_Sag_Coord(ra, dec, degree=True):
     return sag_coo
 
 
-def sag2radec(lam, bet,  degree=True):
+def sag_to_radec(lam, bet, degree=True):
     # """ this code is done according to
     #     the conversion by Belokurov et al 2014 437 116
     #     here arctan2 returns angle from -180 to 180                             """
     import numpy as np
     import math as m
-    if  degree:
+    if degree:
         lam_tmp = lam * m.pi / 180
         bet_tmp = bet * m.pi / 180
     else:
@@ -81,8 +82,8 @@ def sag2radec(lam, bet,  degree=True):
         bet_tmp = bet
 
     a11, a12, a13 = -0.84846291, -0.31910658, -0.42223415
-    a21, a22, a23 =  0.21215555, -0.93595354,  0.28103559
-    b11, b12, b13 = -0.48487186,  0.14886895,  0.86182209
+    a21, a22, a23 = 0.21215555, -0.93595354, 0.28103559
+    b11, b12, b13 = -0.48487186, 0.14886895, 0.86182209
     radec = np.zeros((len(lam), 2))
     radec[:, 0] = np.arctan2(a11 * np.cos(lam_tmp) * np.cos(bet_tmp) +
                              a12 * np.sin(lam_tmp) * np.cos(bet_tmp) +

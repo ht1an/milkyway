@@ -12,7 +12,7 @@ def mock_disk_R(a, b, N, Rmin = 10, Rmax = 40):
     b is the intercept
     N is the numbers of the mock stars
     Rmin/Rmax is the minimum/maximum galactocentric distance R, the default
-    values are 10 and 30
+    values are 10 and 40
     """
     def integrate_sig_disk(a, b, R):
         # integrating the distribution returns exp(a*R+b)/a

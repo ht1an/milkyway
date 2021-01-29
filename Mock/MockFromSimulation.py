@@ -69,6 +69,6 @@ class MockFromGalaxia:
         if ret != 0:
             sys.exit('Exec cmd %s error, return value: %s' % (f"galaxia -r {parafile}", str(ret)))
 
-    def ebf_to_fits(self, ind=None, inputfile, outputfile):
+    def ebf_to_fits(self, inputfile, outputfile, ind=None):
         import ebf
-
+        print(inputfile, outputfile)

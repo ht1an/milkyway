@@ -3,9 +3,7 @@
 def Calc_Orbit(ra, dec, dist, pmra, pmdec, rv,t=None, PV_Sun=None, Potential=None):
     import numpy as np
     from astropy import units
-    # from galpy.actionAngle import actionAngleStaeckel
     from galpy.orbit import Orbit
-    # import galpy.util.bovy_conversion as bc
     from galpy.potential import MWPotential2014
 
     if PV_Sun is None:
@@ -16,7 +14,7 @@ def Calc_Orbit(ra, dec, dist, pmra, pmdec, rv,t=None, PV_Sun=None, Potential=Non
         U_sun, V_sun, W_sun = PV_Sun[0:3]
         X_sun = PV_Sun[3]
         V_LSR = PV_Sun[4]
-    print(X_sun,V_LSR,'---------------')
+    # print(X_sun,V_LSR,'---------------')
     if Potential is None:
         pot = MWPotential2014
     else:

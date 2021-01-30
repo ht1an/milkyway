@@ -2,6 +2,7 @@ README.md
 setup.py
 Clusters/MemberSelect.py
 Clusters/__init__.py
+Convert/CoordConvert.py
 Convert/MockConvert.py
 Convert/__init__.py
 Dynamics/Orbits.py

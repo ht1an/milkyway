@@ -22,7 +22,6 @@ def calc_halo_q_mc(R, Z, ns=10001):
     return sq[ind_min], sr[ind_min], diff[ind_min]
 
 
-
 def density_halo(R0, Z0, q_halo=None, ns = None):
     n = len(R0)
     if q_halo is None:

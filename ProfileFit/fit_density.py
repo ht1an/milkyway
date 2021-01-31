@@ -27,7 +27,7 @@ def density_halo(R0, Z0, q_halo=None, ns = None):
     if q_halo is None:
         q_halo = np.zeros_like(R0)
         if ns is None:
-            for i in range(n):
+            for i in range(n):e
                 q_halo[i] = calc_halo_q_mc(R0[i], Z0[i])
         else:
             for i in range(n):

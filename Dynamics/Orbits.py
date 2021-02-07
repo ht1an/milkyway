@@ -22,7 +22,7 @@ def Calc_Orbit(ra, dec, dist, pmra, pmdec, rv,t=None, PV_Sun=None, Potential=Non
 
     o = Orbit([ra, dec, dist, pmra, pmdec, rv],ro=X_sun, vo=V_LSR,radec=True, solarmotion='dehnen')
     if t is None:
-        print("t is none")
+        print("t is set ")
         ts = np.linspace(0,10,1001)*units.Gyr
     else:
         ts = t*units.Gyr

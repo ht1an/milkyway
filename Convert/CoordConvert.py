@@ -1,5 +1,6 @@
 # this is the file containing the functions for converting the coordinates
 # ----------------------------------------------------------------------------
+
 def Correct_PM_From_Solar_Motion(ra, dec, pmra, pmdec, dist, degree=True, kpc=True,
                                  radec=True, X_Sun=8.34, UVW_Sun=[11.1, 12.24, 7.25], V_LSR=232):
     """
@@ -98,3 +99,4 @@ def sag_to_radec(lam, bet, degree=True):
         return radec * 180 / m.pi
     else:
         return radec
+

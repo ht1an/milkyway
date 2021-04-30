@@ -79,85 +79,85 @@ else:
     plt.savefig(ppath+f"XY_{dist_tag}.pdf")
 plt.show()
 
-fig_xz = plt.figure(figsize=(8,6))
-plt.fill_between([-100,100],[5,5],[-5,-5],color="gray",alpha=0.2)
-plt.scatter(Ort.x(ts), Ort.z(ts),s=5, c = t*1000, cmap='jet',vmin=-max_age*1000,vmax=max_age*1000)
-plt.scatter(Ortb.x(tsb), Ortb.z(tsb),s=5, c = tb*1000, cmap='jet',vmin=-max_age*1000,vmax=max_age*1000)
-plt.colorbar()
-# plt.vlines(x=Ortb.x(tsb[ind_mint]),ymin=-50,ymax=50,color='gray')
-# plt.hlines(y=Ortb.z(tsb[ind_mint]),xmin=-50,xmax=50,color='gray')
-plt.plot(Ort.x(), Ort.z(),'kp',markersize=5)
-if dist_tag is None:
-    plt.arrow(Ortb.x(tsb)[ind_mint]-arrow_x, Ortb.z(tsb)[ind_mint]-arrow_y,arrow_x,arrow_y,color="gray",
-              head_width=4,length_includes_head=True,width=1,
-              label=f"(x, z)=({Ortb.x(tsb)[ind_mint]:.2f},{Ortb.z(tsb)[ind_mint]:.2f})")
-    plt.legend(fontsize=15)
-else:
-    plt.title(f"Distance from {dist_tag}")
-plt.xlabel("X(kpc)", fontsize=15)
-plt.ylabel("Z(kpc)", fontsize=15)
-plt.xticks(fontsize=14)
-plt.yticks(fontsize=14)
-plt.xlim((0,20))
-plt.ylim((-20,20))
-if dist_tag is None:
-    plt.savefig(ppath + f"XZ_Gabs{Gabs:.2f}.pdf")
-else:
-    plt.savefig(ppath+f"XZ_{dist_tag}.pdf")
-plt.show()
-
-
-fig_lb = plt.figure(figsize=(8,6))
-plt.scatter(Ort.ll(ts), Ort.bb(ts),s=5, c = t*1000, cmap='jet',vmin=-max_age*1000,vmax=max_age*1000)
-plt.scatter(Ortb.ll(tsb), Ortb.bb(tsb),s=5, c = tb*1000, cmap='jet',vmin=-max_age*1000,vmax=max_age*1000)
-plt.colorbar()
-plt.plot(Ort.ll(), Ort.bb(),'kp',markersize=5)
-plt.xlabel("l(degree)",fontsize=15)
-plt.ylabel("b(degree)",fontsize=15)
-plt.xticks(fontsize=14)
-plt.yticks(fontsize=14)
-if dist_tag is None:
-    plt.savefig(ppath + f"llbb_Gabs{Gabs:.2f}.pdf")
-else:
-    plt.savefig(ppath+f"llbb_{dist_tag}.pdf")
-plt.show()
-
-fig_pm = plt.figure(figsize=(8,6))
-plt.scatter(Ort.pmll(ts), Ort.pmbb(ts),s=5, c = t*1000, cmap='jet',vmin=-max_age*1000,vmax=max_age*1000)
-plt.scatter(Ortb.pmll(tsb), Ortb.pmbb(tsb),s=5, c = tb*1000, cmap='jet',vmin=-max_age*1000,vmax=max_age*1000)
-plt.colorbar()
-plt.plot(Ort.pmll(), Ort.pmbb(),'kp',markersize=5)
-plt.xlabel("$\\mu_l$(mas yr$^{-1}$)",fontsize=15)
-plt.ylabel("$\\mu_b$(mas yr$^{-1}$)",fontsize=15)
-plt.xticks(fontsize=14)
-plt.yticks(fontsize=14)
-if dist_tag is None:
-    plt.savefig(ppath + f"pm_Gabs{Gabs:.2f}.pdf")
-else:
-    plt.savefig(ppath+f"pm_{dist_tag}.pdf")
-plt.show()
-
-# fig_lb = plt.figure(figsize=(8,6))
-# plt.quiver(Ort.ll(ts), Ort.bb(ts),Ort.pmll(ts), Ort.pmbb(ts),scale=50)
-# plt.quiver(Ortb.ll(tsb), Ortb.bb(tsb),Ortb.pmll(tsb), Ortb.pmbb(tsb),scale=50)
-# plt.scatter(Ort.ll(ts), Ort.bb(ts),s=5, c = t*1000, cmap='jet',vmin=-max_age*1000,vmax=max_age*1000)
-# plt.scatter(Ortb.ll(tsb), Ortb.bb(tsb),s=5, c = tb*1000, cmap='jet',vmin=-max_age*1000,vmax=max_age*1000)
+# fig_xz = plt.figure(figsize=(8,6))
+# plt.fill_between([-100,100],[5,5],[-5,-5],color="gray",alpha=0.2)
+# plt.scatter(Ort.x(ts), Ort.z(ts),s=5, c = t*1000, cmap='jet',vmin=-max_age*1000,vmax=max_age*1000)
+# plt.scatter(Ortb.x(tsb), Ortb.z(tsb),s=5, c = tb*1000, cmap='jet',vmin=-max_age*1000,vmax=max_age*1000)
 # plt.colorbar()
-# plt.plot(Ort.ll(), Ort.bb(),'kp',markersize=5)
-# plt.xlabel("l(degree)",fontsize=15)
-# plt.ylabel("b(degree)",fontsize=15)
+# # plt.vlines(x=Ortb.x(tsb[ind_mint]),ymin=-50,ymax=50,color='gray')
+# # plt.hlines(y=Ortb.z(tsb[ind_mint]),xmin=-50,xmax=50,color='gray')
+# plt.plot(Ort.x(), Ort.z(),'kp',markersize=5)
+# if dist_tag is None:
+#     plt.arrow(Ortb.x(tsb)[ind_mint]-arrow_x, Ortb.z(tsb)[ind_mint]-arrow_y,arrow_x,arrow_y,color="gray",
+#               head_width=4,length_includes_head=True,width=1,
+#               label=f"(x, z)=({Ortb.x(tsb)[ind_mint]:.2f},{Ortb.z(tsb)[ind_mint]:.2f})")
+#     plt.legend(fontsize=15)
+# else:
+#     plt.title(f"Distance from {dist_tag}")
+# plt.xlabel("X(kpc)", fontsize=15)
+# plt.ylabel("Z(kpc)", fontsize=15)
 # plt.xticks(fontsize=14)
 # plt.yticks(fontsize=14)
+# plt.xlim((0,20))
+# plt.ylim((-20,20))
 # if dist_tag is None:
-#     plt.savefig(ppath + f"llbbpm_Gabs{Gabs:.2f}.pdf")
+#     plt.savefig(ppath + f"XZ_Gabs{Gabs:.2f}.pdf")
 # else:
-#     plt.savefig(ppath+f"llbbpm_{dist_tag}.pdf")
+#     plt.savefig(ppath+f"XZ_{dist_tag}.pdf")
 # plt.show()
-
-print(f"x:{Ortb.x(0)},\n",
-      f"y:{Ortb.y(0)},\n",
-      f"z:{Ortb.z(0)},\n",
-      f"vx:{Ortb.vx(0)},\n",
-      f"vy:{Ortb.vy(0)},\n",
-      f"vz:{Ortb.vz(0)},\n",
-      "v_tot:",np.sqrt(Ortb.vx(0)**2 + Ortb.vy(0)**2 + Ortb.vz(0)**2))
+# #
+# #
+# # fig_lb = plt.figure(figsize=(8,6))
+# # plt.scatter(Ort.ll(ts), Ort.bb(ts),s=5, c = t*1000, cmap='jet',vmin=-max_age*1000,vmax=max_age*1000)
+# # plt.scatter(Ortb.ll(tsb), Ortb.bb(tsb),s=5, c = tb*1000, cmap='jet',vmin=-max_age*1000,vmax=max_age*1000)
+# # plt.colorbar()
+# # plt.plot(Ort.ll(), Ort.bb(),'kp',markersize=5)
+# # plt.xlabel("l(degree)",fontsize=15)
+# # plt.ylabel("b(degree)",fontsize=15)
+# # plt.xticks(fontsize=14)
+# # plt.yticks(fontsize=14)
+# # if dist_tag is None:
+# #     plt.savefig(ppath + f"llbb_Gabs{Gabs:.2f}.pdf")
+# # else:
+# #     plt.savefig(ppath+f"llbb_{dist_tag}.pdf")
+# # plt.show()
+# #
+# # fig_pm = plt.figure(figsize=(8,6))
+# # plt.scatter(Ort.pmll(ts), Ort.pmbb(ts),s=5, c = t*1000, cmap='jet',vmin=-max_age*1000,vmax=max_age*1000)
+# # plt.scatter(Ortb.pmll(tsb), Ortb.pmbb(tsb),s=5, c = tb*1000, cmap='jet',vmin=-max_age*1000,vmax=max_age*1000)
+# # plt.colorbar()
+# # plt.plot(Ort.pmll(), Ort.pmbb(),'kp',markersize=5)
+# # plt.xlabel("$\\mu_l$(mas yr$^{-1}$)",fontsize=15)
+# # plt.ylabel("$\\mu_b$(mas yr$^{-1}$)",fontsize=15)
+# # plt.xticks(fontsize=14)
+# # plt.yticks(fontsize=14)
+# # if dist_tag is None:
+# #     plt.savefig(ppath + f"pm_Gabs{Gabs:.2f}.pdf")
+# # else:
+# #     plt.savefig(ppath+f"pm_{dist_tag}.pdf")
+# # plt.show()
+# #
+# # # fig_lb = plt.figure(figsize=(8,6))
+# # # plt.quiver(Ort.ll(ts), Ort.bb(ts),Ort.pmll(ts), Ort.pmbb(ts),scale=50)
+# # # plt.quiver(Ortb.ll(tsb), Ortb.bb(tsb),Ortb.pmll(tsb), Ortb.pmbb(tsb),scale=50)
+# # # plt.scatter(Ort.ll(ts), Ort.bb(ts),s=5, c = t*1000, cmap='jet',vmin=-max_age*1000,vmax=max_age*1000)
+# # # plt.scatter(Ortb.ll(tsb), Ortb.bb(tsb),s=5, c = tb*1000, cmap='jet',vmin=-max_age*1000,vmax=max_age*1000)
+# # # plt.colorbar()
+# # # plt.plot(Ort.ll(), Ort.bb(),'kp',markersize=5)
+# # # plt.xlabel("l(degree)",fontsize=15)
+# # # plt.ylabel("b(degree)",fontsize=15)
+# # # plt.xticks(fontsize=14)
+# # # plt.yticks(fontsize=14)
+# # # if dist_tag is None:
+# # #     plt.savefig(ppath + f"llbbpm_Gabs{Gabs:.2f}.pdf")
+# # # else:
+# # #     plt.savefig(ppath+f"llbbpm_{dist_tag}.pdf")
+# # # plt.show()
+# #
+# # print(f"x:{Ortb.x(0)},\n",
+# #       f"y:{Ortb.y(0)},\n",
+# #       f"z:{Ortb.z(0)},\n",
+# #       f"vx:{Ortb.vx(0)},\n",
+# #       f"vy:{Ortb.vy(0)},\n",
+# #       f"vz:{Ortb.vz(0)},\n",
+# #       "v_tot:",np.sqrt(Ortb.vx(0)**2 + Ortb.vy(0)**2 + Ortb.vz(0)**2))
